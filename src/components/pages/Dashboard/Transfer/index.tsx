@@ -25,11 +25,18 @@ const Transfer: React.FC<Props> = () => {
                   id="filled-basic"
                   label="Account Number"
                   variant="filled"
+                  fullWidth
                 />
-                <br></br>
+                <div>&nbsp;</div>
 
-                <TextField id="filled-basic" label="Amount" variant="filled" />
+                <TextField
+                  fullWidth
+                  id="filled-basic"
+                  label="Amount"
+                  variant="filled"
+                />
               </div>
+              <div>&nbsp;</div>
 
               <div>
                 <button

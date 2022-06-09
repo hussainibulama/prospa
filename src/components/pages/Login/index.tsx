@@ -5,6 +5,17 @@ import Slider from "../../common/Slider/loginSlider";
 import TextField from "@mui/material/TextField";
 import apple from "../../assets/img/apple-store.svg";
 import google from "../../assets/img/google-white.png";
+import { styled } from "@mui/material/styles";
+const CssTextField = styled(TextField)({
+  "& label.Mui-focused": {
+    color: "red",
+  },
+  "& .MuiOutlinedInput-root": {
+    "&.Mui-focused fieldset": {
+      borderColor: "white",
+    },
+  },
+});
 interface Props {}
 const Login: React.FC<Props> = () => {
   const Navigate = useNavigate();
@@ -21,15 +32,16 @@ const Login: React.FC<Props> = () => {
               An account, with powerful, personalised tools all in one place
             </p>
 
-            <TextField
+            <CssTextField
               id="filled-basic"
               label="Email Address"
               variant="filled"
             />
 
-            <br></br>
-            <TextField id="filled-basic" label="Password" variant="filled" />
+            <div>&nbsp;</div>
+            <CssTextField id="filled-basic" label="Password" variant="filled" />
             <div>
+              <div>&nbsp;</div>
               <button
                 className="first"
                 onClick={(e) => {
@@ -40,6 +52,7 @@ const Login: React.FC<Props> = () => {
                 Sign in
               </button>
             </div>
+
             <div>
               <button className="second">
                 <img src={google} alt="google" width="20" />

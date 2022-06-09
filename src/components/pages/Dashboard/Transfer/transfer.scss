@@ -61,9 +61,8 @@ $RobSans: "Roboto", sans-serif;
       }
       .Inputs {
         position: relative;
-        width: 100%;
+        width: 40%;
       }
-
       .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root::after {
         box-sizing: content-box !important;
         border-width: 1px !important;
@@ -88,21 +87,20 @@ $RobSans: "Roboto", sans-serif;
         background: #e0e2ec !important;
       }
       .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
-        margin-bottom: 1em;
+        margin-bottom: 1em !important;
       }
       .css-10botns-MuiInputBase-input-MuiFilledInput-input {
         font-size: 14px !important;
         color: #1c1335 !important;
-        margin-top: 1em;
-        border: 0;
-        margin-top: 1em;
-        width: 100%;
+        border: 0 !important;
+        width: 100% !important;
         background: #f4f8fb !important;
       }
 
       .MuiInputBase-input::before {
         border-bottom: 1px solid brown !important;
       }
+
       button {
         position: relative;
         font-family: $RobSans;
