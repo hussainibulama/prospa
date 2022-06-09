@@ -69,7 +69,20 @@ $RobSans: "Roboto", sans-serif;
         font-weight: 700;
         color: #8397ab;
       }
-
+      ::selection {
+        background: #fa4a84;
+        text-shadow: none;
+        box-sizing: content-box !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-image: linear-gradient(
+          270deg,
+          #00d2ff -8.34%,
+          #7e51ff 50.93%,
+          #fa4a84 106.85%
+        ) !important;
+        border-image-slice: 1 !important;
+      }
       .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root::after {
         box-sizing: content-box !important;
         border-width: 1px !important;
