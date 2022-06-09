@@ -1,0 +1,71 @@
+$RalSans: "Raleway", sans-serif;
+$RobSans: "Roboto", sans-serif;
+.slider_left {
+  height: 100%;
+  .level1 {
+    position: relative;
+    height: 10%;
+  }
+  .level2 {
+    position: relative;
+    height: 65%;
+  }
+  .level3 {
+    position: relative;
+    height: 10%;
+  }
+  .loaders {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 4.5em;
+    margin-bottom: 2em;
+    div {
+      width: 90%;
+      .mdl-progress > .progressbar {
+        background-color: #fff;
+        z-index: 1;
+        height: 1.5px;
+        left: 0;
+      }
+      .mdl-progress > .bufferbar {
+        background: #555555 !important;
+        height: 1.5px;
+      }
+    }
+  }
+  .oters {
+    position: relative;
+    h2 {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      font-family: $RalSans;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 1;
+      color: #fff;
+    }
+    p {
+      position: relative;
+      margin-top: 1em;
+      font-family: $RalSans;
+      font-weight: 700;
+      color: #fff;
+    }
+    img {
+      position: relative;
+      width: 75%;
+      top: 3em;
+      object-fit: contain;
+    }
+  }
+  .foot {
+    position: relative;
+    margin-top: 1em;
+    font-family: $RobSans;
+    font-weight: 700;
+    color: #fff;
+  }
+}
