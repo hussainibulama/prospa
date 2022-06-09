@@ -3,6 +3,27 @@ import Sidenav from "../../../common/Nav/sidenav";
 import Topnav from "../../../common/Nav/topnav";
 import "./transfer.scss";
 import TextField from "@mui/material/TextField";
+import { styled } from "@mui/material/styles";
+const CssTextField = styled(TextField)({
+  "& label.Mui-focused": {
+    color: "red",
+  },
+  "& .MuiFilledInput-root:before": {
+    borderBottom: "2px solid white",
+  },
+  "& .MuiFilledInput-root:after": {
+    boxSizing: "content-box",
+    borderWidth: "1px",
+    borderStyle: "solid",
+    borderImage: `linear-gradient(
+            270deg,
+            #00d2ff -8.34%,
+            #7e51ff 50.93%,
+            #fa4a84 106.85%
+          )`,
+    borderImageSlice: "1",
+  },
+});
 interface Props {}
 const Transfer: React.FC<Props> = () => {
   return (
@@ -21,15 +42,15 @@ const Transfer: React.FC<Props> = () => {
             </p>
             <form>
               <div className="Inputs">
-                <TextField
-                  id="filled-basic"
+                <CssTextField
+                  id="custom-css-outlined-input"
                   label="Account Number"
                   variant="filled"
                   fullWidth
                 />
                 <div>&nbsp;</div>
 
-                <TextField
+                <CssTextField
                   fullWidth
                   id="filled-basic"
                   label="Amount"

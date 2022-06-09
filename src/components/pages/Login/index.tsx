@@ -10,10 +10,20 @@ const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
     color: "red",
   },
-  "& .MuiOutlinedInput-root": {
-    "&.Mui-focused fieldset": {
-      borderColor: "white",
-    },
+  "& .MuiFilledInput-root:before": {
+    borderBottom: "2px solid white",
+  },
+  "& .MuiFilledInput-root:after": {
+    boxSizing: "content-box",
+    borderWidth: "1px",
+    borderStyle: "solid",
+    borderImage: `linear-gradient(
+            270deg,
+            #00d2ff -8.34%,
+            #7e51ff 50.93%,
+            #fa4a84 106.85%
+          )`,
+    borderImageSlice: "1",
   },
 });
 interface Props {}
@@ -33,13 +43,17 @@ const Login: React.FC<Props> = () => {
             </p>
 
             <CssTextField
-              id="filled-basic"
+              id="custom-css-outlined-input"
               label="Email Address"
               variant="filled"
             />
 
             <div>&nbsp;</div>
-            <CssTextField id="filled-basic" label="Password" variant="filled" />
+            <CssTextField
+              id="custom-css-outlined-input"
+              label="Password"
+              variant="filled"
+            />
             <div>
               <div>&nbsp;</div>
               <button
