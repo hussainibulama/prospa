@@ -94,13 +94,13 @@ $RobSans: "Roboto", sans-serif;
         background: #e0e2ec !important;
       }
       .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
-        margin-bottom: 1em;
+        margin-bottom: 1em !important;
       }
       .css-10botns-MuiInputBase-input-MuiFilledInput-input {
         font-size: 14px !important;
         color: #1c1335 !important;
-        border: 0;
-        width: 100%;
+        border: 0 !important;
+        width: 100% !important;
         background: #f4f8fb !important;
       }
 
