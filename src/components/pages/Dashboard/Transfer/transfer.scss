@@ -1,3 +1,5 @@
+$RalSans: "Raleway", sans-serif;
+$RobSans: "Roboto", sans-serif;
 .dashbaord {
   position: relative;
   width: 100%;
@@ -21,11 +23,103 @@
     width: 75%;
     top: 0;
     right: 0;
-
+    overflow-x: hidden;
     float: right;
     min-height: 100vh;
     height: 100%;
     overflow-y: auto;
     background-color: #fff;
+    .pages_data {
+      position: relative;
+      width: 100%;
+      top: 5em;
+      padding-left: 3em;
+
+      h3 {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        font-family: $RobSans;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1;
+        color: #1b003b;
+      }
+      p {
+        position: relative;
+        margin-top: 1em;
+        width: 50%;
+        font-size: 16px;
+        font-family: $RalSans;
+        font-weight: 700;
+        color: hsl(210, 19%, 59%);
+      }
+      form {
+        position: relative;
+        width: 100%;
+        top: 3em;
+      }
+      .Inputs {
+        position: relative;
+        width: 100%;
+      }
+
+      .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root::after {
+        box-sizing: content-box !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-image: linear-gradient(
+          270deg,
+          #00d2ff -8.34%,
+          #7e51ff 50.93%,
+          #fa4a84 106.85%
+        ) !important;
+        border-image-slice: 1 !important;
+      }
+      .css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+        color: #fa4a84 !important;
+        font-weight: 500 !important;
+        font-family: $RobSans !important;
+      }
+      .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root::before {
+        border: 0 !important;
+        height: 1px !important;
+        font-size: 10px !important;
+        background: #e0e2ec !important;
+      }
+      .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+        margin-bottom: 1em;
+      }
+      .css-10botns-MuiInputBase-input-MuiFilledInput-input {
+        font-size: 14px !important;
+        color: #1c1335 !important;
+        border: 0;
+        width: 100%;
+        background: #f4f8fb !important;
+      }
+
+      .MuiInputBase-input::before {
+        border-bottom: 1px solid brown !important;
+      }
+      button {
+        position: relative;
+        font-family: $RobSans;
+        width: auto;
+        display: flex;
+        padding: 0 25px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: #fa4a84;
+        color: #fff;
+        font-size: 14px;
+        border: 0;
+        margin-top: 0px;
+        height: 40px;
+        box-shadow: none;
+        outline: 0;
+        border-radius: 6px;
+      }
+    }
   }
 }

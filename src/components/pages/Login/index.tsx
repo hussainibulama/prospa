@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./login.scss";
 import Slider from "../../common/Slider/loginSlider";
 import TextField from "@mui/material/TextField";
@@ -6,6 +7,7 @@ import apple from "../../assets/img/apple-store.svg";
 import google from "../../assets/img/google-white.png";
 interface Props {}
 const Login: React.FC<Props> = () => {
+  const Navigate = useNavigate();
   return (
     <>
       <div className="onboarding">
@@ -20,7 +22,7 @@ const Login: React.FC<Props> = () => {
             </p>
 
             <TextField
-              id="filled-error"
+              id="filled-basic"
               label="Email Address"
               variant="filled"
             />
@@ -28,7 +30,15 @@ const Login: React.FC<Props> = () => {
             <br></br>
             <TextField id="filled-basic" label="Password" variant="filled" />
             <div>
-              <button className="first">Sign in</button>
+              <button
+                className="first"
+                onClick={(e) => {
+                  e.preventDefault();
+                  Navigate("/dashboard");
+                }}
+              >
+                Sign in
+              </button>
             </div>
             <div>
               <button className="second">

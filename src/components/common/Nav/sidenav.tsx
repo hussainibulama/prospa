@@ -4,9 +4,12 @@ import Transfer from "../../assets/svg/transfer.svg";
 import Logout from "../../assets/svg/logout.svg";
 import Shop from "../../assets/svg/shop.svg";
 import Arrow from "../../assets/svg/ar_down.svg";
+import { useNavigate } from "react-router-dom";
 
 interface Props {}
 const Sidenav: React.FC<Props> = () => {
+  const Navigate = useNavigate();
+
   return (
     <>
       <div className="side_nav">
@@ -30,7 +33,7 @@ const Sidenav: React.FC<Props> = () => {
               <img src={Transfer} alt="icon1" />
               <span>Transfer</span>
             </div>
-            <div className="items">
+            <div className="items" onClick={() => Navigate("/")}>
               <img src={Logout} alt="icon2" />
               <span>Logout</span>
             </div>
